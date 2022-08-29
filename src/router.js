@@ -49,6 +49,14 @@ export default new Router({
                 component: () =>
                     import ('@/views/view/my/my.vue')
             }]
+        },
+        {
+            // 搜索
+            name: 'search',
+            path: '/search',
+            // 懒加载方式加载组件
+            component: () =>
+                import ('@/views/view/search/search.vue')
         }
     ]
 })

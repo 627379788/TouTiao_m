@@ -14,12 +14,11 @@ request.interceptors.request.use(function(config) {
     if (user && user.token) {
         config.headers.Authorization = `Bearer ${user.token}`
     }
-    console.log(config)
     return config
 }, function(error) {
     // 请求失败，抛出错误
     return Promise.reject(error)
 })
 
-// 导入request函数对象
+// 导出request函数对象
 export default request
