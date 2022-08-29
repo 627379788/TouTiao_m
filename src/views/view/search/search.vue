@@ -9,6 +9,7 @@
                 @search="onSearch"
                 @cancel="onCancel"
                 @focus="isShowResult = false"
+                @clear="searchText = ''"
                 background="#3296fa"
             />
         </form>
