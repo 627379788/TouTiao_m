@@ -1,6 +1,6 @@
 <template>
     <!-- 文章列表项组件 -->
-          <van-cell class="article-item">
+          <van-cell class="article-item" :to="`/article/${article.art_id}`">
             <!-- 文章标题 -->
             <div slot="title" class="article_title van-multi-ellipsis--l2">{{article.title}}</div>
             <div slot="label">

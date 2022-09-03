@@ -57,6 +57,24 @@ export default new Router({
             // 懒加载方式加载组件
             component: () =>
                 import ('@/views/view/search/search.vue')
+        },
+        {
+            // 文章详情页
+            name: 'article',
+            path: '/article/:articleId',
+            // 懒加载方式加载组件
+            component: () =>
+                import ('@/views/view/article/article.vue'),
+            props: true // 解耦，设置为true会把路由地址参数映射到组件的props中
+        },
+        {
+            // 用户信息页
+            name: 'UserProfile',
+            path: '/user-profile',
+            // 懒加载方式加载组件
+            component: () =>
+                import ('@/views/view/user-profile/user-profile.vue')
         }
+
     ]
 })

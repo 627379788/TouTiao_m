@@ -16,7 +16,8 @@ dayjs.locale('zh-cn')
     过滤器的返回值会渲染到使用过滤器的模板位置
  */
 Vue.filter('relativeTime', value => {
-        return dayjs().to(dayjs(value))
-    })
-    // 配置相对时间参数
+    return dayjs().to(dayjs(value))
+})
+
+// 配置相对时间参数
 dayjs.extend(relativeTime)
